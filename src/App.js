@@ -83,10 +83,6 @@ const Card=({children,style})=>(
   <div style={{background:"var(--color-background-primary)",border:"0.5px solid var(--color-border-tertiary)",borderRadius:12,padding:"16px 18px",...style}}>{children}</div>
 );
 
-const Tag=({label,color=C.tealDeep,bg=C.tealLight})=>(
-  <span style={{background:bg,color,fontSize:11,fontWeight:500,padding:"3px 10px",borderRadius:20}}>{label}</span>
-);
-
 function SolarCalculator({onBack}){
   const [step,setStep]=useState(1);
   const [tier,setTier]=useState(null);
